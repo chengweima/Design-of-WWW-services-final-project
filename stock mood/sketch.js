@@ -130,7 +130,7 @@ function sentiment(table) {
   wordcloudSizeColor(counts[keys[0]], counts[keys[9]], counts[keys[0]]);
   text(keys[0], 300, 750);
   wordcloudSizeColor(counts[keys[1]], counts[keys[9]], counts[keys[0]]);
-  text(keys[1], 500, 650);
+  text(keys[1], 580, 650);
   wordcloudSizeColor(counts[keys[2]], counts[keys[9]], counts[keys[0]]);
   text(keys[2], 100, 700);
   wordcloudSizeColor(counts[keys[3]], counts[keys[9]], counts[keys[0]]);
@@ -152,7 +152,7 @@ function sentiment(table) {
 
 
 function wordcloudSizeColor(value, min, max){
-  c1 = map(value, min, max, 150, 255);
+  c1 = map(value, min, max, 100, 255);
   s1 = map(value, min, max, 30, 90);
   textSize(s1);
   fill(c1, c1, c1);
